@@ -233,10 +233,14 @@ The `files_helper` module is created for handling the reading, writing, and vali
 <summary><strong>Functions</strong></summary>
 
 ```python
-def get_GroceryList(csv_file_path: str) -> GroceryList: – Returns GroceryList from a CSV file.
-def save_recipe(recipe: Recipe) -> None: – Saves recipe to a TXT file.
-def validate_Recipes_folder() -> None: – Validates Recipe folder.
-def recipe_exists(recipe_name: str) -> bool: – Checks if a recipe with given name already exists.
+def get_GroceryList(csv_file_path: str) -> GroceryList:
+    """Returns GroceryList from a CSV file."""
+def save_recipe(recipe: Recipe) -> None:
+    """Saves recipe to a TXT file."""
+def validate_Recipes_folder() -> None:
+    """Validates Recipe folder."""
+def recipe_exists(recipe_name: str) -> bool:
+    """Checks if a recipe with given name already exists."""
 ```
 </details>
 </details>
