@@ -3,10 +3,10 @@
 ## Description: A CLI app that suggests recipes based on available ingredients.
 
 ### Features:
-        1. Users enter ingredients they have at home or input an image or CSV file.
-        2. Filter by cuisine, diet type, or preparation time.
-        3. AI suggests recipes using those ingredients and Selected filter.
-        4. Generate a shopping list for missing ingredients.
+    1. Users enter ingredients they have at home or input an image or CSV file.
+    2. Filter by cuisine, diet type, or preparation time.
+    3. AI suggests recipes using those ingredients and Selected filter.
+    4. Generate a shopping list for missing ingredients.
 
 ## Enumerators
 <details>
