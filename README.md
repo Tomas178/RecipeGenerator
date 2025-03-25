@@ -281,7 +281,7 @@ AVAILABLE_IMAGE_EXTENSIONS = (".png", ".jpg", ".jpeg", ".webp", ".gif")
 ```
 
 <details>
-<summary><strong>Functions</strong></strong>
+<summary><strong>Functions</strong></summary>
 
 ```python
 def ask_user_for_ingredients() -> GroceryList:
@@ -300,8 +300,7 @@ def ask_user_to_save_recipe() -> bool:
 </details>
 </details>
 
-<details>
-<summary><strong>CSV file structure</strong></summary>
+### CSV file structure
 
 ```csv
 Tomato
@@ -314,7 +313,6 @@ Meat
 Yogurt
 ```
 
-</details>
 
 ### Available formats for image input – .png, .jpg, .jpeg, .webp, .gif
 
