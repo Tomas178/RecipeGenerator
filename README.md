@@ -183,16 +183,20 @@ def get_shopping_list(self, recipe: Recipe) -> GroceryList:
     <summary><strong>Functions</strong></summary>
 
     1. Checks if the APIs are set in the .env file.
+
     ```python 
     def is_valid_APIs() -> None:
     ```
+
     2. All these functions below check for an API key based on their variable name.
+
     ```python
     def check_OpenAI_API_key() -> None:
     def check_rapid_API_key() -> None:
     def check_OpenAI_org_id() -> None:
     def check_OpenAI_project_id() -> None:
     ```
+    
   </details>
 </details>
 
