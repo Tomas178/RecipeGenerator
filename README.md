@@ -313,7 +313,6 @@ Meat
 Yogurt
 ```
 
-
 ### Available formats for image input – .png, .jpg, .jpeg, .webp, .gif
 
-
+[Back to top](#readme)
