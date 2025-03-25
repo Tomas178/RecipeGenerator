@@ -174,56 +174,53 @@ def get_shopping_list(self, recipe: Recipe) -> GroceryList:
 ### Helpers
 
 <details>
-  <summary><strong>api_helper</strong></summary>
+<summary><strong>api_helper</strong></summary>
 
-  ### Description
-  The `api_helper` module is created for checking API keys.
+### Description
+The `api_helper` module is created for checking API keys.
 
-  <details>
-    <summary><strong>Functions</strong></summary>
+<details>
+<summary><strong>Functions</strong></summary>
 
-    1. Checks if the APIs are set in the .env file.
+1. Checks if the APIs are set in the .env file:
+```python 
+def is_valid_APIs() -> None:
+```
 
-    ```python 
-    def is_valid_APIs() -> None:
-    ```
-
-    2. All these functions below check for an API key based on their variable name.
-
-    ```python
-    def check_OpenAI_API_key() -> None:
-    def check_rapid_API_key() -> None:
-    def check_OpenAI_org_id() -> None:
-    def check_OpenAI_project_id() -> None:
-    ```
-
-  </details>
+2. All these functions below check for an API key based on their variable name:
+```python
+def check_OpenAI_API_key() -> None:
+def check_rapid_API_key() -> None:
+def check_OpenAI_org_id() -> None:
+def check_OpenAI_project_id() -> None:
+```
+</details>
 </details>
 
 <details>
-  <summary><strong>app_helper</strong></summary>
+<summary><strong>app_helper</strong></summary>
 
-  ### Description
-  The `app_helper` module is created for handling user inputs when selecting ingredient input type and filtering choices.
+### Description
+The `app_helper` module is created for handling user inputs when selecting ingredient input type and filtering choices.
 
-  <details>
-    <summary><strong>Functions</strong></summary>
+<details>
+<summary><strong>Functions</strong></summary>
 
-    ```python
-    def select_mode() -> ModeEnum:
-        """Displays the input menu to the user and returns selected mode."""
-    def select_filter() -> FilterEnum:
-        """Displays the filter menu to the user and returns Filter type."""
-    def encode_image(image_path: str) -> str:
-        """Encodes an image file to a Base64 string."""
-    def select_cuisine() -> str:
-        """Displays the cuisine menu to the user and returns selected cuisine."""
-    def select_diet_type() -> str:
-        """Displays the diet type menu to the user and returns selected diet type."""
-    def select_preperation_time() -> str:
-        """Displays the preperation time menu to the user and returns selected preperation time."""
-    ```
-  </details>
+```python
+def select_mode() -> ModeEnum:
+    """Displays the input menu to the user and returns selected mode."""
+def select_filter() -> FilterEnum:
+    """Displays the filter menu to the user and returns Filter type."""
+def encode_image(image_path: str) -> str:
+    """Encodes an image file to a Base64 string."""
+def select_cuisine() -> str:
+    """Displays the cuisine menu to the user and returns selected cuisine."""
+def select_diet_type() -> str:
+    """Displays the diet type menu to the user and returns selected diet type."""
+def select_preperation_time() -> str:
+    """Displays the preperation time menu to the user and returns selected preperation time."""
+```
+</details>
 </details>
 
 <details>
@@ -235,15 +232,12 @@ def get_shopping_list(self, recipe: Recipe) -> GroceryList:
   <details>
     <summary><strong>Functions</strong></summary>
 
-    functions:
-
     ```python
     def get_GroceryList(csv_file_path: str) -> GroceryList: – Returns GroceryList from a CSV file.
     def save_recipe(recipe: Recipe) -> None: – Saves recipe to a TXT file.
     def validate_Recipes_folder() -> None: – Validates Recipe folder.
     def recipe_exists(recipe_name: str) -> bool: – Checks if a recipe with given name already exists.
     ```
-    
   </details>
 </details>
 
