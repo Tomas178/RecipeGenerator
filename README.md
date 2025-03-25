@@ -1,6 +1,6 @@
 # Smart Recipe Generator
 
-## Description: A CLI app that suggests recipes based on available ingredients.
+## A CLI app that suggests recipes based on available ingredients.
 
 ### Features:
     1. Users enter ingredients they have at home or input an image or CSV file.
