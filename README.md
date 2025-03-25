@@ -224,66 +224,72 @@ def select_preperation_time() -> str:
 </details>
 
 <details>
-  <summary><strong>files_helper</strong></summary>
+<summary><strong>files_helper</strong></summary>
 
-  ### Description
-  The `files_helper` module is created for handling the reading, writing, and validating of files.
+### Description
+The `files_helper` module is created for handling the reading, writing, and validating of files.
 
-  <details>
-    <summary><strong>Functions</strong></summary>
+<details>
+<summary><strong>Functions</strong></summary>
 
-    ```python
-    def get_GroceryList(csv_file_path: str) -> GroceryList: – Returns GroceryList from a CSV file.
-    def save_recipe(recipe: Recipe) -> None: – Saves recipe to a TXT file.
-    def validate_Recipes_folder() -> None: – Validates Recipe folder.
-    def recipe_exists(recipe_name: str) -> bool: – Checks if a recipe with given name already exists.
-    ```
-  </details>
+```python
+def get_GroceryList(csv_file_path: str) -> GroceryList: – Returns GroceryList from a CSV file.
+def save_recipe(recipe: Recipe) -> None: – Saves recipe to a TXT file.
+def validate_Recipes_folder() -> None: – Validates Recipe folder.
+def recipe_exists(recipe_name: str) -> bool: – Checks if a recipe with given name already exists.
+```
+</details>
 </details>
 
 <details>
-  <summary><strong>OpenAI_helper</strong></summary>
+<summary><strong>OpenAI_helper</strong></summary>
 
-  ### Description
-  The `OpenAI_helper` module is created for handling the requests to OpenAI and responses from OpenAI.
+### Description
+The `OpenAI_helper` module is created for handling the requests to OpenAI and responses from OpenAI.
 
-  <details>
-    <summary><strong>Functions</strong></summary>
+<details>
+<summary><strong>Functions</strong></summary>
 
-    ```python
-    def get_AI_response_from_image(client: OpenAI, base64_image: str) -> GroceryList: – Sends an image to OpenAI API and returns the AI response.
-    def get_AI_response_for_recipe(
-        client: OpenAI,
-        groceryList: GroceryList,
-        cuisine: str,
-        diet_type: str,
-        preparation_time: str,
-    ) -> Optional[Recipe]: – Sends ingredients and filtering choices to OpenAI API and returns the AI generated recipe.
-    ```
-  </details>
+```python
+def get_AI_response_from_image(client: OpenAI, base64_image: str) -> GroceryList: – Sends an image to OpenAI API and returns the AI response.
+def get_AI_response_for_recipe(
+    client: OpenAI,
+    groceryList: GroceryList,
+    cuisine: str,
+    diet_type: str,
+    preparation_time: str,
+) -> Optional[Recipe]: – Sends ingredients and filtering choices to OpenAI API and returns the AI generated recipe.
+```
+</details>
 </details>
 
 <details>
-  <summary><strong>user_input_helper</strong></summary>
+<summary><strong>user_input_helper</strong></summary>
 
-  ### Description
-  The `user_input_helper` module is created for handling the user inputs when entering ingredients and files paths.
+### Description
+The `user_input_helper` module is created for handling the user inputs when entering ingredients and files paths.
 
-  ### Data
-  ```python 
-  AVAILABLE_IMAGE_EXTENSIONS = (".png", ".jpg", ".jpeg", ".webp", ".gif")
+### Data
+```python 
+AVAILABLE_IMAGE_EXTENSIONS = (".png", ".jpg", ".jpeg", ".webp", ".gif")
 ```
 
 <details>
 <summary><strong>Functions</strong></strong>
 
 ```python
-def ask_user_for_ingredients() -> GroceryList: – Returns a list of ingredients (GroceryList class).
-def ask_user_for_ingredient() -> Ingredient: – Asks and returns a single ingredient.
-def ask_user_for_another_ingredient() -> bool: – Asks user if they want to enter another ingredient and returns boolean value.
-def ask_user_for_image_path(AVAILABLE_IMAGE_EXTENSIONS: tuple[str]) -> str: – Asks user the image path returns the image path.
-def ask_user_for_csv_path() -> str: Asks the user CSV file path returns the CSV file path.
-def ask_user_to_save_recipe() -> bool: – Asks user if they want to save recipe and returns boolean value.
+def ask_user_for_ingredients() -> GroceryList:
+    """Returns a list of ingredients (GroceryList class)."""
+def ask_user_for_ingredient() -> Ingredient:
+    """Asks and returns a single ingredient."""
+def ask_user_for_another_ingredient() -> bool:
+    """Asks user if they want to enter another ingredient and returns boolean value."""
+def ask_user_for_image_path(AVAILABLE_IMAGE_EXTENSIONS: tuple[str]) -> str:
+    """Asks user the image path returns the image path."""
+def ask_user_for_csv_path() -> str:
+    """Asks the user CSV file path returns the CSV file path."""
+def ask_user_to_save_recipe() -> bool:
+    """Asks user if they want to save recipe and returns boolean value."""
 ```
 </details>
 </details>
