@@ -251,14 +251,16 @@ The `OpenAI_helper` module is created for handling the requests to OpenAI and re
 <summary><strong>Functions</strong></summary>
 
 ```python
-def get_AI_response_from_image(client: OpenAI, base64_image: str) -> GroceryList: – Sends an image to OpenAI API and returns the AI response.
+def get_AI_response_from_image(client: OpenAI, base64_image: str) -> GroceryList:
+    """Sends an image to OpenAI API and returns the AI response."""
 def get_AI_response_for_recipe(
     client: OpenAI,
     groceryList: GroceryList,
     cuisine: str,
     diet_type: str,
     preparation_time: str,
-) -> Optional[Recipe]: – Sends ingredients and filtering choices to OpenAI API and returns the AI generated recipe.
+) -> Optional[Recipe]:
+    """Sends ingredients and filtering choices to OpenAI API and returns the AI generated recipe."""
 ```
 </details>
 </details>
