@@ -196,7 +196,7 @@ def get_shopping_list(self, recipe: Recipe) -> GroceryList:
     def check_OpenAI_org_id() -> None:
     def check_OpenAI_project_id() -> None:
     ```
-    
+
   </details>
 </details>
 
@@ -235,12 +235,15 @@ def get_shopping_list(self, recipe: Recipe) -> GroceryList:
   <details>
     <summary><strong>Functions</strong></summary>
 
+    functions:
+
     ```python
     def get_GroceryList(csv_file_path: str) -> GroceryList: – Returns GroceryList from a CSV file.
     def save_recipe(recipe: Recipe) -> None: – Saves recipe to a TXT file.
     def validate_Recipes_folder() -> None: – Validates Recipe folder.
     def recipe_exists(recipe_name: str) -> bool: – Checks if a recipe with given name already exists.
     ```
+    
   </details>
 </details>
 
@@ -293,6 +296,7 @@ def ask_user_to_save_recipe() -> bool: – Asks user if they want to save recipe
 
 <details>
 <summary><strong>CSV file structure</strong></summary>
+
 ```csv
 Tomato
 Apple
@@ -303,6 +307,7 @@ Eggs
 Meat
 Yogurt
 ```
+
 </details>
 
 ### Available formats for image input – .png, .jpg, .jpeg, .webp, .gif
